@@ -1,0 +1,17 @@
+[package]
+name = "lsp-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "lsp-cli"
+path = "src/main.rs"
+
+[dependencies]
+lsp-client.workspace = true
+lsap.workspace = true
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"

@@ -1,0 +1,12 @@
+[package]
+name = "lsap"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+lsp-client.workspace = true
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+lsp-types = "0.97"
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"

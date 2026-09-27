@@ -1,0 +1,6 @@
+[package]
+name = "lsp-client"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
